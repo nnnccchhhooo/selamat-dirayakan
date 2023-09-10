@@ -1,7 +1,22 @@
 // trigger to play music in the background with sweetalert
-window.addEventListener("load", () => {
-  document.querySelector(".song").play();
-  animationTimeline();
+window.addEventListener('load', () => {
+  Swal.fire({
+      title: 'Untukmu yang selalu menjadi sayangku serta cintaku!',
+      // text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Mulai',
+      cancelButtonText: 'Batal',
+  }).then((result) => {
+      if (result.isConfirmed) {
+          document.querySelector('.song').play();
+          animationTimeline();
+      } else {
+          animationTimeline();
+      }
+  });
 });
 
 // animation timeline
