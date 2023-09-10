@@ -38,7 +38,7 @@ const animationTimeline = () => {
   tl.to(".container", 1, {
     visibility: "visible",
   })
-    .from(".one", 3, {
+    .from(".one", 2, {
       opacity: 0,
       y: 10,
     })
@@ -48,7 +48,7 @@ const animationTimeline = () => {
     })
     .to(
       ".one",
-      3,
+      2,
       {
         opacity: 0,
         y: 10,
@@ -57,7 +57,7 @@ const animationTimeline = () => {
     )
     .to(
       ".two",
-      3,
+      2,
       {
         opacity: 0,
         y: 10,
